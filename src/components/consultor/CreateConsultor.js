@@ -6,9 +6,7 @@ const CreateConsultor = () => {
   return (
     <Create>
       <SimpleForm>
-        <Grid
-          container
-        >
+        <Grid container>
           <Grid container spacing={2}>
             <Grid item xs={6}>
               <TextInput fullWidth source="nombre"></TextInput>
