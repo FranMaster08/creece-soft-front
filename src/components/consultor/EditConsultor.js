@@ -27,12 +27,12 @@ const EditEmpresa = (props) => {
           </Grid>
 
           <Grid item xs={6}>
-            <TextInput source="nit_rut" label="NIT RUT" fullWidth></TextInput>
+            <TextInput source="nitRut" label="NIT RUT" fullWidth></TextInput>
           </Grid>
 
           <Grid item xs={6}>
             <TextInput
-              source="nombre_comercial_del_negocio"
+              source="nombreComercialDelNegocio"
               label="NOMBRE COMERCIAL"
               fullWidth
             ></TextInput>
@@ -42,7 +42,7 @@ const EditEmpresa = (props) => {
           </Grid>
           <Grid item xs={6}>
             <TextInput
-              source="correo_electronico"
+              source="correoElectronico"
               label="CORREO ELECTRONICO"
               fullWidth
             ></TextInput>
@@ -53,7 +53,7 @@ const EditEmpresa = (props) => {
           </Grid>
           <Grid item xs={6}>
             <TextInput
-              source="nombre_empresario"
+              source="nombreEmpresario"
               label="NOMBRE EMPRESARIO"
               fullWidth
             ></TextInput>
@@ -68,7 +68,7 @@ const EditEmpresa = (props) => {
 
           <Grid item xs={6}>
             <TextInput
-              source="doc_identidad"
+              source="docIdentidad"
               label="DOC IDENTIDAD"
               fullWidth
             ></TextInput>
