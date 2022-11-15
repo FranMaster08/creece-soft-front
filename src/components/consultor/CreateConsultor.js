@@ -2,73 +2,35 @@ import React from "react";
 import { Create, SimpleForm, TextInput } from "react-admin";
 import { Grid } from "@mui/material";
 
-const CreateEmpresa = () => {
+const CreateConsultor = () => {
   return (
     <Create>
       <SimpleForm>
         <Grid
           container
-          spacing={8}
-          direction="row"
-          justifyContent="center"
-          alignItems="center"
         >
-          <Grid item xs={5}>
-            <TextInput source="gestor" label="GESTOR" fullWidth></TextInput>
-          </Grid>
+          <Grid container spacing={2}>
+            <Grid item xs={6}>
+              <TextInput fullWidth source="nombre"></TextInput>
+            </Grid>
+            <Grid item xs={6}>
+              <TextInput fullWidth source="apellido"></TextInput>
+            </Grid>
 
-          <Grid item xs={5}>
-            <TextInput source="nit_rut" label="NIT RUT" fullWidth></TextInput>
+            <Grid item xs={6}>
+              <TextInput fullWidth source="direccion"></TextInput>
+            </Grid>
+            <Grid item xs={6}>
+              <TextInput fullWidth source="telefono"></TextInput>
+            </Grid>
+            <Grid item xs={6}>
+              <TextInput fullWidth source="cedula"></TextInput>
+            </Grid>
           </Grid>
-
-          <Grid item xs={5}>
-            <TextInput
-              source="nombre_comercial_del_negocio"
-              label="NOMBRE COMERCIAL"
-              fullWidth
-            ></TextInput>
-          </Grid>
-          <Grid item xs={5}>
-            <TextInput source="contacto" label="CONTACTO" fullWidth></TextInput>
-          </Grid>
-          <Grid item xs={5}>
-            <TextInput
-              source="correo_electronico"
-              label="CORREO ELECTRONICO"
-              fullWidth
-            ></TextInput>
-          </Grid>
-
-          <Grid item xs={5}>
-            <TextInput source="ciudad" label="CIUDAD" fullWidth></TextInput>
-          </Grid>
-          <Grid item xs={5}>
-            <TextInput
-              source="nombre_empresario"
-              label="NOMBRE EMPRESARIO"
-              fullWidth
-            ></TextInput>
-          </Grid>
-          <Grid item xs={5}>
-            <TextInput
-              source="direccion"
-              label="DIRECCION"
-              fullWidth
-            ></TextInput>
-          </Grid>
-
-          <Grid item xs={5}>
-            <TextInput
-              source="doc_identidad"
-              label="DOC IDENTIDAD"
-              fullWidth
-            ></TextInput>
-          </Grid>
-          <Grid item xs={5}></Grid>
         </Grid>
       </SimpleForm>
     </Create>
   );
 };
 
-export default CreateEmpresa;
+export default CreateConsultor;
